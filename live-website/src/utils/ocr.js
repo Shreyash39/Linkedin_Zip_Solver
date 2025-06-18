@@ -1,0 +1,1 @@
+// You can add OCR helper functions here in the future.

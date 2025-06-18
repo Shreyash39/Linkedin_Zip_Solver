@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/shreyashkiranchaudhari/Desktop/Projects/DSA-Zip/Github_Clone_website/Linkedin_Zip_Solver",
+      "program": "/Users/shreyashkiranchaudhari/Desktop/Projects/DSA-Zip/Github_Clone_website/Linkedin_Zip_Solver/build/Debug/outDebug"
+    }
+  ]
+}
