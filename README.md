@@ -1,7 +1,7 @@
 # 🔗 Linkedin Zip Solver
 
 A fast and extensible C++ solver for "Zip" logic puzzles, as seen on LinkedIn and similar platforms.  
-This project features sample input files, clean code, and visual output for easy verification.  
+This project features sample input files, clean code, and visual output for easy verification.
 
 ---
 
@@ -47,7 +47,7 @@ Each input file describes the puzzle grid:
 
 ### Expected Solution Output
 
-![Expected Output - Zip Puzzle](image1)
+![Expected Output - Zip Puzzle](IMG_79946307F87B-1.jpeg)
 
 ---
 
@@ -79,6 +79,7 @@ Linkedin_Zip_Solver/
 │
 ├── main.cpp             # Main C++ solver
 ├── input1.txt           # Sample input file
+├── IMG_79946307F87B-1.jpeg  # Example output image
 ├── README.md            # Project documentation
 └── [other files]
 ```
