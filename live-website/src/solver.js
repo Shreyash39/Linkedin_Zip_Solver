@@ -1,10 +1,14 @@
 // Robust solver for the Zip puzzle, ported from Main_cpp_originalCode.cpp
-// Handles any m x n grid, only visits numbered cells (not blanks)
+// Handles any m x n grid, can be set to visit all cells or just numbered cells
 
-function checkAllNumberedVisited(vis, mapNums) {
+// Change this to 'true' if you want to visit ALL cells (including blanks),
+// or leave as 'false' for "only numbered cells" (original behavior)
+const MUST_VISIT_ALL_CELLS = true;
+
+function checkAllVisited(vis, mapNums) {
   for (let i = 0; i < vis.length; ++i)
     for (let j = 0; j < vis[0].length; ++j)
-      if (mapNums[i][j] !== -1 && !vis[i][j]) return false;
+      if ((MUST_VISIT_ALL_CELLS || mapNums[i][j] !== -1) && !vis[i][j]) return false;
   return true;
 }
 
@@ -27,7 +31,7 @@ function isValidMove(curRow, curCol, nxtRow, nxtCol, m, n, vis, hWalls, vWalls, 
 function solve(mapNums, hWalls, vWalls, path, vis, row, col, lastNum, targetNum, res, pathFound) {
   if (pathFound.found) return;
   if (mapNums[row][col] === targetNum) {
-    if (checkAllNumberedVisited(vis, mapNums)) {
+    if (checkAllVisited(vis, mapNums)) {
       res.length = 0;
       for (const p of path) res.push([...p]);
       pathFound.found = true;
