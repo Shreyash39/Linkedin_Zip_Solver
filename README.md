@@ -1,3 +1,6 @@
+Live Link
+https://linkedin-zip-solver.vercel.app/
+
 # 🔗 Linkedin Zip Solver
 
 A fast and extensible C++ solver for "Zip" logic puzzles, as seen on LinkedIn and similar platforms.  
