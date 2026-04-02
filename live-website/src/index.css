@@ -549,7 +549,7 @@ body {
   letter-spacing: 0.4px;
 }
 
-/* ── Responsive ────────────────────────────────────── */
+/* ── Responsive ────────────────────────────────── */
 @media (max-width: 600px) {
   .app-wrapper   { padding: 20px 14px 56px; }
   .card          { padding: 18px 14px; }
